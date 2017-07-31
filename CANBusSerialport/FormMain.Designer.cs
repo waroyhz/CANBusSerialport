@@ -243,7 +243,7 @@
             this.checkBoxNewlineSend.Name = "checkBoxNewlineSend";
             this.checkBoxNewlineSend.Size = new System.Drawing.Size(72, 16);
             this.checkBoxNewlineSend.TabIndex = 12;
-            this.checkBoxNewlineSend.Text = "自动换行";
+            this.checkBoxNewlineSend.Text = "发送换行";
             this.checkBoxNewlineSend.UseVisualStyleBackColor = true;
             // 
             // checkBoxHexView
