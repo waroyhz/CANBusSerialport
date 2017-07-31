@@ -54,7 +54,7 @@ namespace CANBusSerialport
                     protocol.time = parseInt32();
                     protocol.split = parseInt8();
                     protocol.dataType = parseInt8();
-                    protocol.dataID = parseHexStrings(4);
+                    protocol.dataID = parseIntStrings(4);
                     protocol.dataLength = parseInt8();
                     protocol.data = parseHexStrings(8); //protocol.dataLength
                     protocol.end = parseInt8();
@@ -85,6 +85,15 @@ namespace CANBusSerialport
         }
 
         private string parseHexStrings(int dataLength)
+        {
+            var ret = new StringBuilder();
+            for (int i = 0; i < dataLength; i++)
+                ret.AppendFormat("{0:x2} ", buffer[i + bufferPos]);
+            bufferPos += dataLength;
+            return ret.ToString();
+        }
+
+        private string parseIntStrings(int dataLength)
         {
             var ret = new StringBuilder();
             for (int i = dataLength -1; i >=0 ; i--)
