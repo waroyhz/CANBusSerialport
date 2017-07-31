@@ -17,7 +17,7 @@ namespace CANBusSerialport
         private StringBuilder builder = new StringBuilder();//避免在事件处理方法中反复的创建，定义到外面。
         private long received_count = 0;//接收计数
         private long send_count = 0;//发送计数
-        public DataAnalyse dataAnalyse = new DataAnalyse();
+        public Process dataAnalyse = new Process();
 
         public FormMain()
         {
