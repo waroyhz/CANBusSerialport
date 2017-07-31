@@ -59,6 +59,10 @@ namespace CANBusSerialport
                     foreach (byte b in buf)
                     {
                         builder.Append(b.ToString("X2") + " ");
+                        if (checkBox_newLineFor8D.Checked && b == 0x8d)
+                        {
+                            builder.Append("\n");
+                        }
                     }
                 }
                 else

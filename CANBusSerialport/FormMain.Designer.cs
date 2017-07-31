@@ -52,6 +52,7 @@
             this.groupBox_line = new System.Windows.Forms.GroupBox();
             this.button_addMonitor = new System.Windows.Forms.Button();
             this.linePanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.checkBox_newLineFor8D = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -166,6 +167,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.checkBox_newLineFor8D);
             this.groupBox1.Controls.Add(this.txGet);
             this.groupBox1.Controls.Add(this.labelGetCount);
             this.groupBox1.Location = new System.Drawing.Point(5, 5);
@@ -354,6 +356,16 @@
             this.linePanel.Size = new System.Drawing.Size(810, 142);
             this.linePanel.TabIndex = 0;
             // 
+            // checkBox_newLineFor8D
+            // 
+            this.checkBox_newLineFor8D.AutoSize = true;
+            this.checkBox_newLineFor8D.Location = new System.Drawing.Point(236, 0);
+            this.checkBox_newLineFor8D.Name = "checkBox_newLineFor8D";
+            this.checkBox_newLineFor8D.Size = new System.Drawing.Size(60, 16);
+            this.checkBox_newLineFor8D.TabIndex = 9;
+            this.checkBox_newLineFor8D.Text = "8D换行";
+            this.checkBox_newLineFor8D.UseVisualStyleBackColor = true;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -410,6 +422,7 @@
         private System.Windows.Forms.Button button_addMonitor;
         public System.Windows.Forms.GroupBox groupBox_line;
         public System.Windows.Forms.FlowLayoutPanel linePanel;
+        private System.Windows.Forms.CheckBox checkBox_newLineFor8D;
     }
 }
 
